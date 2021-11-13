@@ -1,10 +1,15 @@
 
 import './App.css';
+import Header from './components/Header';
+
 
 function App() {
   return (
-    <div className="max-w-screen-xl">
-      hi
+    <div className="bg-bg-blue text-light">
+    <Header />
+    <main>
+      
+    </main>
     </div>
   );
 }
