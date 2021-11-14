@@ -9,11 +9,6 @@
   clip-path: polygon(38% 0, 100% 0, 100% 100%, 0 100%);
 }
 
-.landing-bg {
-  background: linear-gradient(
-      90deg,
-      rgba(11, 17, 32, 0.432) 3.01%,
-      rgba(11, 17, 32, 0.232) 57%
-    ),
-    url('./assets/landing-bg.png');
+.footer-heading {
+  @apply font-bold;
 }

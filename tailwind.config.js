@@ -7,6 +7,7 @@ module.exports = {
       red: '#F60512',
       light: '#ffffff',
       'card-bg': '#111A32',
+      'container-bg': '#1D222F',
     },
     fontFamily: {
       sans: ['Poppins', 'system-ui', 'sans-serif'],
