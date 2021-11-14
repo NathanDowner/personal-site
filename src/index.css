@@ -2,3 +2,17 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+
+.background-clip {
+  /* clip-path: polygon(58% 0, 100% 0, 100% 100%, 20% 100%); */
+  clip-path: polygon(72% 0, 100% 0, 100% 100%, 36% 100%);
+}
+
+.landing-bg {
+  background: linear-gradient(
+      90deg,
+      rgba(11, 17, 32, 0.432) 3.01%,
+      rgba(11, 17, 32, 0.232) 57%
+    ),
+    url('./assets/landing-bg.png');
+}
