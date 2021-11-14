@@ -7,16 +7,24 @@ const Header = () => {
       <nav>
         <ul className="flex items-center space-x-6">
           <li>
-            <a href="/">About</a>
+            <a className="nav-link" href="/">
+              About
+            </a>
           </li>
           <li>
-            <a href="/">Work</a>
+            <a className="nav-link" href="/">
+              Work
+            </a>
           </li>
           <li>
-            <a href="/">Experience</a>
+            <a className="nav-link" href="/">
+              Experience
+            </a>
           </li>
           <li>
-            <a href="/">Contact</a>
+            <a className="nav-link" href="/">
+              Contact
+            </a>
           </li>
           <li>
             <button className="px-2 py-1 rounded-md bg-red">Resume</button>

@@ -9,6 +9,43 @@
   clip-path: polygon(38% 0, 100% 0, 100% 100%, 0 100%);
 }
 
+.nav-link {
+  @apply relative;
+}
+
+.nav-link:hover::before {
+  content: '<';
+  position: absolute;
+  left: -9px;
+  @apply text-red font-mono;
+}
+
+.nav-link:hover::after {
+  content: '/>';
+  position: absolute;
+  @apply text-red font-mono;
+}
+
+.small-tags::before {
+  content: '<small>';
+  @apply text-red;
+}
+
+.small-tags::after {
+  content: '</small>';
+  @apply text-red;
+}
+
 .footer-heading {
   @apply font-bold;
+}
+
+.section-header::before {
+  content: '<h2>';
+  @apply text-red;
+}
+
+.section-header::after {
+  content: '</h2>';
+  @apply text-red;
 }
