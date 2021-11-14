@@ -17,7 +17,7 @@ const Landing = () => {
           </h2>
 
           {/* Buttons */}
-          <div className="flex space-x-4 my-6">
+          <div className="flex items-center space-x-4 my-6">
             <a className="bg-red rounded-full px-3 py-2" href="/">
               Contact Me
             </a>
