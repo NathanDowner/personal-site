@@ -1,4 +1,4 @@
-@import url('https://fonts.googleapis.com/css2?family=Fira+Code:wght@500&family=Poppins:wght@300;400;500;600;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Fira+Code:wght@500&family=Poppins:wght@300;400;500;600;700;800&display=swap');
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
@@ -48,4 +48,15 @@
 .section-header::after {
   content: '</h2>';
   @apply text-red;
+}
+
+.test::before {
+  content: '';
+  /* position: absolute;
+  top: 0;
+  bottom: 0;
+  right: 0;
+  left: 0;
+  background-color: red; */
+  @apply z-10 absolute top-0 left-0 w-full h-full transform -translate-x-2 translate-y-2 rounded-lg border-red border-2;
 }

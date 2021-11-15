@@ -8,6 +8,7 @@ module.exports = {
       light: '#ffffff',
       'card-bg': '#111A32',
       'container-bg': '#1D222F',
+      overlay: '#2A4078',
     },
     fontFamily: {
       sans: ['Poppins', 'system-ui', 'sans-serif'],
@@ -19,6 +20,12 @@ module.exports = {
       },
       backgroundPosition: {
         'right-4': 'center right -12rem',
+      },
+      fontSize: {
+        huge: '180px',
+      },
+      height: {
+        98: '402px',
       },
     },
   },
