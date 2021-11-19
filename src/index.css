@@ -50,15 +50,12 @@
   @apply text-red;
 }
 
-.test::before {
-  content: '';
-  /* position: absolute;
-  top: 0;
-  bottom: 0;
-  right: 0;
-  left: 0;
-  background-color: red; */
-  @apply z-10 absolute top-0 left-0 w-full h-full transform -translate-x-2 translate-y-2 rounded-lg border-red border-2;
+.reversed {
+  direction: rtl;
+}
+
+.not-reversed {
+  direction: ltr;
 }
 
 .work-blip::before {

@@ -27,6 +27,9 @@ module.exports = {
       height: {
         98: '402px',
       },
+      gridTemplateColumns: {
+        'job-entry': '1fr auto 1fr',
+      },
     },
   },
   variants: {

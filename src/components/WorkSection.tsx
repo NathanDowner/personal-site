@@ -4,16 +4,11 @@ import FullPageSection from './layout/FullPageSection';
 const WorkSection = () => {
   return (
     <FullPageSection title="Where I've Worked" watermarkText="Work">
-      <div className="flex justify-center ">
-        {/* <div
-          className="border-2 absolute border-dashed border-red h-full"
-          style={{ left: '5.8%' }}
-        /> */}
-        <ul className="space-y-4 border-l-4 border-dashed border-red">
-          {[1, 2, 3].map((blank) => (
-            <li className="ml-6">
-              <JobEntry key={blank} />
-            </li>
+      <div className="flex justify-center items-center ">
+        <ul className="relative space-y-4 mt-10">
+          <div className="absolute border-l-4 border-dashed border-red h-full left-1/2 transform -translate-x-1/2" />
+          {[1, 2, 3, 4].map((blank, index) => (
+            <JobEntry key={blank} isReversed={index % 2 === 0} />
           ))}
         </ul>
       </div>
