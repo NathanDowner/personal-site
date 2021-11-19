@@ -5,7 +5,7 @@ const Header = () => {
     <header className="sticky z-30 top-0 max-w-screen-2xl mx-auto flex items-center justify-between py-5 px-5 ">
       <img src={logo} className="h-8" alt="Logo" />
       <nav>
-        <ul className="flex items-center space-x-6">
+        <ul className="flex items-center space-x-8">
           <li>
             <a className="nav-link" href="/">
               About
