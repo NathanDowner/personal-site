@@ -6,9 +6,11 @@ module.exports = {
       'bg-blue': '#0B1120',
       red: '#F60512',
       light: '#ffffff',
+      violet: '#B7CBFF',
       'card-bg': '#111A32',
       'container-bg': '#1D222F',
       overlay: '#2A4078',
+      'project-link-bg': '#22325C',
     },
     fontFamily: {
       sans: ['Poppins', 'system-ui', 'sans-serif'],
@@ -34,10 +36,13 @@ module.exports = {
       gridTemplateColumns: {
         'job-entry': '1fr auto 1fr',
       },
+      maxWidth: {
+        'job-card': '454px',
+      },
     },
   },
   variants: {
     extend: {},
   },
-  plugins: [],
+  plugins: [require('@tailwindcss/line-clamp')],
 };

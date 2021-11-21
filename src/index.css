@@ -70,3 +70,8 @@
   content: '';
   @apply absolute top-0 left-0 w-full h-full transform -translate-x-1 translate-y-1 rounded-lg border-red border-2;
 }
+
+.project-tool:not(:last-child)::after {
+  content: '•';
+  @apply text-red text-lg ml-2;
+}
