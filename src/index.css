@@ -50,8 +50,10 @@
   @apply text-red;
 }
 
-.reversed {
-  direction: rtl;
+@variants even, odd {
+  .reversed {
+    direction: rtl;
+  }
 }
 
 .not-reversed {
