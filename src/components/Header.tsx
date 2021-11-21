@@ -8,6 +8,11 @@ const Header = () => {
         <ul className="flex items-center space-x-8">
           <li>
             <a className="nav-link" href="/">
+              Home
+            </a>
+          </li>
+          <li>
+            <a className="nav-link" href="/">
               About
             </a>
           </li>
