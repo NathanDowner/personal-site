@@ -1,14 +1,9 @@
-import githubIcon from '../assets/icons/github-proj-icon.svg';
-import externalIcon from '../assets/icons/external-link-icon.svg';
+import githubIcon from '../../assets/icons/github-proj-icon.svg';
+import externalIcon from '../../assets/icons/external-link-icon.svg';
 
 type Props = {
   isSelected: boolean;
 };
-
-const links: Link[] = [
-  { url: '#', name: 'github' },
-  { url: '#', name: 'website' },
-];
 
 const icons: { [externalSite: string]: string } = {
   github: githubIcon,

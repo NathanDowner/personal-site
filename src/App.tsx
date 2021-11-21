@@ -3,7 +3,7 @@ import AboutMeSection from './components/AboutMeSection';
 import Footer from './components/Footer';
 import Header from './components/Header';
 import Landing from './components/Landing';
-import ProjectsSection from './components/ProjectsSection';
+import ProjectsSection from './components/ProjectSection';
 import WorkSection from './components/WorkSection';
 
 function App() {
