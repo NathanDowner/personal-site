@@ -1,15 +1,11 @@
 import FullPageSection from './layout/FullPageSection';
-import portrait from '../assets/portrait.jpeg';
 
 const AboutMeSection = () => {
   return (
     <FullPageSection title="Who am I?" watermarkText="About Me">
       <div className="grid grid-cols-2 items-center">
-        <img
-          src={portrait}
-          alt="Portrait of Nathan Downer"
-          className="w-auto h-98 rounded-lg object-cover place-self-center relative test"
-        />
+        <div className="w-portrait h-portrait rounded-lg place-self-center bg-cover bg-portrait-img relative z-10 portrait" />
+
         <p className="max-w-prose text-lg">
           Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed quam
           ullamcorper lectus pellentesque hac tempus, ut iaculis. Lacus, risus,

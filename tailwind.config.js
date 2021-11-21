@@ -17,6 +17,7 @@ module.exports = {
     extend: {
       backgroundImage: {
         'landing-img': "url('/src/assets/landing-bg.png')",
+        'portrait-img': 'url(/src/assets/portrait.jpeg)',
       },
       backgroundPosition: {
         'right-4': 'center right -12rem',
@@ -25,7 +26,10 @@ module.exports = {
         huge: '180px',
       },
       height: {
-        98: '402px',
+        portrait: '402px',
+      },
+      width: {
+        portrait: '268px',
       },
       gridTemplateColumns: {
         'job-entry': '1fr auto 1fr',

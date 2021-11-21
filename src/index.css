@@ -63,3 +63,8 @@
   filter: blur(3px);
   @apply absolute h-6 w-6 z-0 bg-red rounded-full transform top-1/2 -translate-y-1/2 left-1/2 -translate-x-1/2;
 }
+
+.portrait::before {
+  content: '';
+  @apply absolute top-0 left-0 w-full h-full transform -translate-x-1 translate-y-1 rounded-lg border-red border-2;
+}
