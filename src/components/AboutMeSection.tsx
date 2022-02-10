@@ -6,7 +6,7 @@ const AboutMeSection = () => {
     <FullPageSection watermarkText="About Me">
       <SectionTitle title="Who Am I?" />
       <div className="grid grid-cols-2 items-center">
-        <div className="w-portrait h-portrait rounded-lg place-self-center bg-cover bg-portrait-img relative z-10 portrait" />
+        <div className="w-[268px] h-[402px] rounded-lg place-self-center bg-cover bg-portrait-img relative z-10 portrait" />
 
         <p className="max-w-prose text-lg">
           Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed quam

@@ -1,6 +1,5 @@
 module.exports = {
-  purge: ['./src/**/*.{js,jsx,ts,tsx}', './public/index.html'],
-  darkMode: false, // or 'media' or 'class'
+  content: ['./src/**/*.{js,jsx,ts,tsx}', './public/index.html'],
   theme: {
     colors: {
       'bg-blue': '#0B1120',
@@ -23,21 +22,6 @@ module.exports = {
       },
       backgroundPosition: {
         'right-4': 'center right -12rem',
-      },
-      fontSize: {
-        huge: '180px',
-      },
-      height: {
-        portrait: '402px',
-      },
-      width: {
-        portrait: '268px',
-      },
-      gridTemplateColumns: {
-        'job-entry': '1fr auto 1fr',
-      },
-      maxWidth: {
-        'job-card': '454px',
       },
     },
   },
