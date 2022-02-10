@@ -1,4 +1,5 @@
 module.exports = {
+  // presets: [require('./my-tailwind-preset.js')],
   content: ['./src/**/*.{js,jsx,ts,tsx}', './public/index.html'],
   theme: {
     colors: {

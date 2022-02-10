@@ -18,10 +18,13 @@ const Landing = () => {
 
           {/* Buttons */}
           <div className="my-6 flex items-center space-x-4 text-lg">
-            <a className="rounded-lg bg-red px-3 py-2" href="/">
+            <a className="red-btn-glow rounded-lg bg-red px-3 py-2" href="/">
               Contact Me
             </a>
-            <a className="rounded-lg border-2 border-light px-3 py-2" href="/">
+            <a
+              className="before:hover: relative overflow-hidden rounded-lg border-2 border-light px-3 py-2 transition-colors ease-in-out before:absolute before:inset-0 before:z-[-1] before:origin-left  before:bg-light before:transition-all before:duration-500 before:ease-in-out before:[clip-path:circle(0%_at_0%_50%)] hover:text-red before:hover:[clip-path:circle(200%_at_0%_50%)]"
+              href="/"
+            >
               View Projects
             </a>
           </div>

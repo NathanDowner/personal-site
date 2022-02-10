@@ -11,14 +11,16 @@ const Header = () => {
           <ul className="flex items-center space-x-8">
             {navLinks.map((link) => (
               <li key={link}>
-                <a className="nav-link" href="/">
+                <a className="nav-link" href={'/' + link.toLowerCase()}>
                   {link}
                 </a>
               </li>
             ))}
 
             <li>
-              <button className="rounded-md bg-red px-2 py-1">Resume</button>
+              <button className="red-btn-glow rounded-md bg-red px-2 py-1">
+                Resume
+              </button>
             </li>
           </ul>
         </nav>

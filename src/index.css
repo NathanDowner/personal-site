@@ -36,6 +36,10 @@
   @apply text-red;
 }
 
+.red-btn-glow {
+  @apply transition-transform ease-in-out hover:scale-110 hover:before:absolute hover:before:-inset-1 hover:before:z-[-10] hover:before:rounded-lg hover:before:bg-red hover:before:blur-sm hover:before:filter;
+}
+
 .footer-heading {
   @apply font-bold;
 }
