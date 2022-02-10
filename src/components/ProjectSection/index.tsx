@@ -1,9 +1,11 @@
 import FullPageSection from '../layout/FullPageSection';
+import SectionTitle from '../layout/SectionTitle';
 import ProjectCarousel from './ProjectCarousel';
 
 const ProjectsSection = () => {
   return (
-    <FullPageSection title="Things I've Built" watermarkText="Projects">
+    <FullPageSection watermarkText="Projects">
+      <SectionTitle title="Things I've Built" />
       <ProjectCarousel />
     </FullPageSection>
   );

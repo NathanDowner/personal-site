@@ -1,8 +1,10 @@
 import FullPageSection from './layout/FullPageSection';
+import SectionTitle from './layout/SectionTitle';
 
 const AboutMeSection = () => {
   return (
-    <FullPageSection title="Who am I?" watermarkText="About Me">
+    <FullPageSection watermarkText="About Me">
+      <SectionTitle title="Who Am I?" />
       <div className="grid grid-cols-2 items-center">
         <div className="w-portrait h-portrait rounded-lg place-self-center bg-cover bg-portrait-img relative z-10 portrait" />
 
