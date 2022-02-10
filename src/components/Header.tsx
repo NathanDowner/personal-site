@@ -4,7 +4,7 @@ const navLinks: string[] = ['Home', 'About', 'Work', 'Projects', 'Contact'];
 
 const Header = () => {
   return (
-    <header className="sticky top-0 z-50 py-5 px-5 shadow-xl">
+    <header className="sticky top-0 z-50 bg-bg-blue bg-opacity-70 py-5 px-5 shadow-xl backdrop-blur-md">
       <div className="mx-auto flex max-w-screen-2xl items-center justify-between">
         <img src={logo} className="h-8" alt="Logo" />
         <nav>
