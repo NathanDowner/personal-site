@@ -3,7 +3,6 @@ import mail from '../assets/icons/email.svg';
 import phone from '../assets/icons/phone.svg';
 import jaFlag from '../assets/icons/jamaica-flag.svg';
 import Socials from './Socials';
-
 const Footer = () => {
   return (
     <div className="px-5 py-10 bg-container-bg">
