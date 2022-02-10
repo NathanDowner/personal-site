@@ -5,9 +5,9 @@ import jaFlag from '../assets/icons/jamaica-flag.svg';
 import Socials from './Socials';
 const Footer = () => {
   return (
-    <div className="px-5 py-10 bg-container-bg">
+    <div className="bg-container-bg px-5 py-10">
       <div className="mx-auto max-w-screen-2xl">
-        <img src={logo} className="h-8 mb-2" alt="Logo" />
+        <img src={logo} className="mb-2 h-8" alt="Logo" />
 
         <div className="grid grid-cols-3 gap-36">
           <div>
@@ -20,7 +20,7 @@ const Footer = () => {
 
           <section>
             <h2 className="footer-heading">Contact Info</h2>
-            <ul className="text-xs space-y-1 mt-2">
+            <ul className="mt-2 space-y-1 text-xs">
               <li className="flex items-center space-x-2">
                 <img src={phone} className="h-4" alt="Phone icon" />
                 <span>+1 (876) 770-5067</span>
@@ -40,7 +40,7 @@ const Footer = () => {
 
           <section>
             <h2 className="footer-heading">Links</h2>
-            <ul className="text-xs space-y-1 mt-2">
+            <ul className="mt-2 space-y-1 text-xs">
               <li>About</li>
               <li>Work</li>
               <li>Experience</li>

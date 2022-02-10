@@ -2,13 +2,13 @@ import Socials from './Socials';
 
 const Landing = () => {
   return (
-    <section className="relative h-screen -mt-20">
-      <div className="-mr-5 absolute right-0 w-2/3 h-full bg-landing-img background-clip bg-cover bg-right bg-no-repeat" />
+    <section className="relative -mt-20 h-screen">
+      <div className="background-clip absolute right-0 -mr-5 h-full w-2/3 bg-landing-img bg-cover bg-right bg-no-repeat" />
 
       <div className="mx-auto max-w-screen-2xl">
-        <div className="absolute z-30 top-1/2 transform -translate-y-1/2">
-          <h3 className="font-mono text-xl small-tags">Hi there</h3>
-          <h1 className="text-6xl font-bold my-2">I'm Nathan Downer</h1>
+        <div className="absolute top-1/2 z-30 -translate-y-1/2 transform">
+          <h3 className="small-tags font-mono text-xl">Hi there</h3>
+          <h1 className="my-2 text-6xl font-bold">I'm Nathan Downer</h1>
           <h2 className="text-2xl">
             A Software Engineer who loves{' '}
             <span className="font-bold">
@@ -17,14 +17,11 @@ const Landing = () => {
           </h2>
 
           {/* Buttons */}
-          <div className="flex items-center space-x-4 my-6">
-            <a className="bg-red rounded-full px-3 py-2" href="/">
+          <div className="my-6 flex items-center space-x-4 text-lg">
+            <a className="rounded-lg bg-red px-3 py-2" href="/">
               Contact Me
             </a>
-            <a
-              className="border-light border-2 rounded-full px-3 py-2"
-              href="/"
-            >
+            <a className="rounded-lg border-2 border-light px-3 py-2" href="/">
               View Projects
             </a>
           </div>

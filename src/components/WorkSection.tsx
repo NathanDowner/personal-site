@@ -6,9 +6,9 @@ const WorkSection = () => {
   return (
     <FullPageSection watermarkText="Work">
       <SectionTitle title="Where I've Worked" />
-      <div className="flex justify-center items-center ">
-        <ul className="relative space-y-4 mt-10">
-          <div className="absolute border-l-4 border-red h-full left-1/2 transform -translate-x-1/2" />
+      <div className="flex items-center justify-center ">
+        <ul className="relative mt-10 space-y-4">
+          <div className="absolute left-1/2 h-full -translate-x-1/2 transform border-l-4 border-red" />
           {[1, 2, 3, 4, 5, 6].map((blank) => (
             <JobEntry key={blank} />
           ))}

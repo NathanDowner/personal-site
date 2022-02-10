@@ -17,13 +17,13 @@
   content: '<';
   position: absolute;
   left: -9px;
-  @apply text-red font-mono;
+  @apply font-mono text-red;
 }
 
 .nav-link:hover::after {
   content: '/>';
   position: absolute;
-  @apply text-red font-mono;
+  @apply font-mono text-red;
 }
 
 .small-tags::before {
@@ -63,15 +63,19 @@
 .work-blip::before {
   content: '';
   filter: blur(3px);
-  @apply absolute h-6 w-6 z-0 bg-red rounded-full transform top-1/2 -translate-y-1/2 left-1/2 -translate-x-1/2;
+  @apply absolute top-1/2 left-1/2 z-0 h-6 w-6 -translate-y-1/2 -translate-x-1/2 transform rounded-full bg-red;
 }
 
 .portrait::before {
   content: '';
-  @apply absolute top-0 left-0 w-full h-full transform -translate-x-1 translate-y-1 rounded-lg border-red border-2;
+  @apply absolute top-0 left-0 h-full w-full -translate-x-1 translate-y-1 transform rounded-lg border-2 border-red;
 }
 
 .project-tool:not(:last-child)::after {
   content: '•';
-  @apply text-red text-lg ml-2;
+  @apply ml-2 text-lg text-red;
+}
+
+.swiper-container {
+  height: 400px;
 }
