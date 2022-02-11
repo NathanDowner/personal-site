@@ -72,12 +72,12 @@
 
 .portrait::before {
   content: '';
-  @apply absolute top-0 left-0 h-full w-full -translate-x-1 translate-y-1 transform rounded-lg border-2 border-red;
+  @apply absolute inset-0 z-[-1] -translate-x-1 translate-y-1 transform rounded-lg border-2 border-red;
 }
 
 .project-tool:not(:last-child)::after {
   content: '•';
-  @apply ml-2 text-lg text-red;
+  @apply relative top-0.5 ml-2 h-4 text-lg text-red;
 }
 
 .swiper-container {

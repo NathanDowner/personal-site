@@ -9,7 +9,7 @@ const Landing = () => {
         <div className="absolute top-1/2 z-30 -translate-y-1/2 transform">
           <h3 className="small-tags font-mono text-xl">Hi there</h3>
           <h1 className="my-2 text-6xl font-bold">I'm Nathan Downer</h1>
-          <h2 className="text-2xl">
+          <h2 className="text-2xl font-thin">
             A Software Engineer who loves{' '}
             <span className="font-bold">
               Frontend <br /> Development
