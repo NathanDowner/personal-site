@@ -24,6 +24,20 @@ module.exports = {
       backgroundPosition: {
         'right-4': 'center right -12rem',
       },
+      keyframes: {
+        ticker: {
+          '0%': { transform: 'translateX(96px)' },
+          '100%': { transform: 'translateX(calc(calc(100%)*-1))' },
+        },
+        ticker2: {
+          '0%': { transform: 'translateX(0)' },
+          '100%': { transform: 'translateX(calc(calc(100%)*-1))' },
+        },
+      },
+      animation: {
+        ticker: 'ticker 30s linear infinite',
+        ticker2: 'ticker 30s linear infinite',
+      },
     },
   },
   variants: {
