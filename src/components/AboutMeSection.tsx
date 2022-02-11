@@ -7,10 +7,10 @@ const AboutMeSection = () => {
     <FullPageSection watermarkText="About Me">
       <SectionTitle title="Who Am I?" />
       <div className="grid grid-cols-2 items-center">
-        <div className="group relative place-self-center before:absolute before:inset-0 before:z-[-1] before:-translate-x-3 before:translate-y-3 before:transform before:rounded-lg before:border-2 before:border-red before:transition-transform before:ease-in-out before:hover:-translate-x-1 before:hover:translate-y-1">
+        <div className="relative place-self-center before:absolute before:inset-0 before:-translate-x-3 before:translate-y-3 before:rounded-lg before:border-2 before:border-red before:transition-transform before:ease-in-out before:hover:-translate-x-1 before:hover:translate-y-1">
           <img
             src={portrait}
-            className=" h-[402px] w-[268px] rounded-lg group-hover:filter"
+            className="relative h-[402px] w-[268px] rounded-lg"
             alt=""
           />
         </div>
