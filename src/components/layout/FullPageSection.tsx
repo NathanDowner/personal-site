@@ -4,13 +4,16 @@ type Props = {
 
 const FullPageSection: React.FC<Props> = ({ watermarkText, children }) => {
   return (
-    <section className="relative min-h-screen border-2 border-red py-20">
-      <h2 className="absolute z-0 select-none text-[180px] font-extrabold leading-tight text-overlay opacity-20">
+    <section className="relative py-20">
+      <span className="absolute -left-12 z-0 select-none text-[180px] font-extrabold leading-tight text-overlay opacity-20">
         {watermarkText}
-      </h2>
-      <div className="z-10 grid h-full place-content-center border-2 border-project-link-bg">
+      </span>
+      <div className="z-10 grid min-h-screen place-content-center border-2 border-project-link-bg">
         {children}
       </div>
+      <span className="absolute bottom-0 -right-12 z-0 select-none text-[180px] font-extrabold leading-tight text-overlay opacity-20">
+        {watermarkText}
+      </span>
     </section>
   );
 };
