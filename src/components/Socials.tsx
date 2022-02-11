@@ -3,13 +3,36 @@ import instagram from '../assets/icons/instagram-icon.svg';
 import twitter from '../assets/icons/twitter-icon.svg';
 import linkedIn from '../assets/icons/linkedin-icon.svg';
 
+const socials: { icon: string; alt: string }[] = [
+  {
+    icon: github,
+    alt: 'Github Icon',
+  },
+  {
+    icon: instagram,
+    alt: 'Instagram Icon',
+  },
+  {
+    icon: twitter,
+    alt: 'Twitter Icon',
+  },
+  {
+    icon: linkedIn,
+    alt: 'LinkedIn Icon',
+  },
+];
+
 const Socials = () => {
   return (
     <div className="flex space-x-2">
-      <img src={github} className="h-7 w-7" alt="Github Icon" />
-      <img src={instagram} className="h-7 w-7" alt="Github Icon" />
-      <img src={twitter} className="h-7 w-7" alt="Github Icon" />
-      <img src={linkedIn} className="h-7 w-7" alt="Github Icon" />
+      {socials.map(({ alt, icon }) => (
+        <img
+          key={alt}
+          src={icon}
+          className="h-7 w-7 cursor-pointer transition-transform ease-in-out hover:-translate-y-1"
+          alt={alt}
+        />
+      ))}
     </div>
   );
 };
