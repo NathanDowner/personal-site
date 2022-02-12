@@ -12,22 +12,22 @@ const ProjectCarousel = () => {
       effect="coverflow"
       grabCursor={true}
       centeredSlides={true}
-      direction="horizontal"
+      direction="vertical"
       slidesPerView={'auto'}
-      spaceBetween={10}
+      spaceBetween={-20}
       coverflowEffect={{
-        rotate: 50,
+        rotate: 0,
         stretch: 0,
         depth: 50,
-        modifier: 1,
-        slideShadows: true,
+        modifier: 4,
+        slideShadows: false,
       }}
       pagination={true}
       onSlideChange={() => console.log('slide change')}
       onSwiper={(swiper) => console.log('slide change')}
       modules={[EffectCoverflow, Pagination]}
     >
-      {[1, 2, 3, 4, 5].map((count, index) => (
+      {[1, 2, 3].map((count, index) => (
         <SwiperSlide key={count} style={{ width: 'auto', height: 'auto' }}>
           {({ isActive, isNext, isPrev }) => (
             <ProjectCard
