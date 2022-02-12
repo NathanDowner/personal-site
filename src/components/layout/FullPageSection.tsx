@@ -4,7 +4,7 @@ type Props = {
 
 const FullPageSection: React.FC<Props> = ({ watermarkText, children }) => {
   return (
-    <section className="relative py-20">
+    <section className="relative py-20 px-8">
       <span className="absolute -left-12 z-0 select-none text-[180px] font-extrabold leading-tight text-overlay opacity-20">
         {watermarkText}
       </span>

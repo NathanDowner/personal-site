@@ -11,7 +11,7 @@ function App() {
   return (
     <div className="bg-bg-blue text-light">
       <Header />
-      <main className="px-8">
+      <main>
         <Landing />
         <AboutMeSection />
         <WorkSection />

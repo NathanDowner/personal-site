@@ -2,7 +2,7 @@ import Socials from './Socials';
 
 const Landing = () => {
   return (
-    <section className="relative -mt-20 h-screen">
+    <section className="relative -mt-20 h-screen px-8">
       <div className="background-clip absolute right-0 -mr-5 h-full w-2/3 bg-landing-img bg-cover bg-right bg-no-repeat" />
 
       <div className="mx-auto max-w-screen-2xl">
