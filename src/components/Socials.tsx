@@ -1,7 +1,7 @@
-import github from '../assets/icons/github-icon.svg';
-import instagram from '../assets/icons/instagram-icon.svg';
-import twitter from '../assets/icons/twitter-icon.svg';
-import linkedIn from '../assets/icons/linkedin-icon.svg';
+import github from '../assets/logos/github-icon.svg';
+import instagram from '../assets/logos/instagram-icon.svg';
+import twitter from '../assets/logos/twitter-icon.svg';
+import linkedIn from '../assets/logos/linkedin-icon.svg';
 
 const socials: { icon: string; alt: string }[] = [
   {

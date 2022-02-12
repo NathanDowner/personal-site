@@ -1,8 +1,10 @@
-import githubIcon from '../../assets/icons/github-proj-icon.svg';
+import githubIcon from '../../assets/logos/github-proj-icon.svg';
 import externalIcon from '../../assets/icons/external-link-icon.svg';
 
 type Props = {
   isSelected: boolean;
+  isPrev: boolean;
+  isNext: boolean;
 };
 
 const icons: { [externalSite: string]: string } = {
@@ -42,21 +44,21 @@ const sampleProject: Project = {
   tools: ['Next.js', 'Tailwind css', 'Firebase'],
 };
 
-const ProjectCard = ({ isSelected = false }: Props) => {
+const ProjectCard = ({ isSelected = false, isPrev, isNext }: Props) => {
   return (
     <div
-      className={`${
-        isSelected && 'ring-2 ring-red'
-      } text-violet max-w-job-card rounded-xl shadow-lg bg-card-b max-w- pl-4 pb-4 overflow-hidden bg-card-bg`}
+      className={`${isPrev ? '' : isNext ? 'border-2 border-light' : ''} ${
+        isSelected && 'z-50 border-2 border-red'
+      } bg-card-b max-w- relative max-w-[454px] overflow-hidden rounded-xl bg-card-bg pl-4 pb-4 text-violet shadow-lg`}
     >
-      <div className="flex justify-between mb-2">
-        <h3 className="font-bold text-lg mt-4">Project Name Here</h3>
+      <div className="mb-2 flex justify-between">
+        <h3 className="mt-4 text-lg font-bold">Project Name Here</h3>
 
         {/* links */}
-        <div className="flex rounded-bl-lg bg-project-link-bg overflow-hidden">
+        <div className="flex overflow-hidden rounded-bl-lg bg-project-link-bg">
           {sampleProject.links.map((link) => (
             <img
-              className="px-4 py-3 cursor-pointer hover:bg-red"
+              className="cursor-pointer px-4 py-3 hover:bg-red hover:fill-red hover:text-red"
               key={link.name}
               src={icons[link.name]}
               alt={link.name}
@@ -65,20 +67,20 @@ const ProjectCard = ({ isSelected = false }: Props) => {
         </div>
       </div>
 
-      <div className="line-clamp-2 max-w-sm mb-10">
+      <div className="mb-10 max-w-sm text-sm line-clamp-2">
         {sampleProject.description}
       </div>
 
       {/* Bottom row */}
-      <div className="flex items-center">
+      <div className="flex items-center text-xs">
         <div className="flex-grow space-x-2">
           {sampleProject.tools.map((tool) => (
-            <span key={tool} className="relative project-tool">
+            <span key={tool} className="project-tool relative">
               {tool}
             </span>
           ))}
         </div>
-        <button className="text-red bg-none text-xl font-semibold mr-4">
+        <button className="mr-4 bg-none text-base font-semibold text-red transition-all hover:scale-105 hover:[text-shadow:0_0_4px_#F60512]">
           View Details
         </button>
       </div>
