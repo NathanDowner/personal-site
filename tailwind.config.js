@@ -1,3 +1,5 @@
+const defaultTheme = require('tailwindcss/defaultTheme');
+
 module.exports = {
   // presets: [require('./my-tailwind-preset.js')],
   content: ['./src/**/*.{js,jsx,ts,tsx}', './public/index.html'],
@@ -15,6 +17,10 @@ module.exports = {
     fontFamily: {
       sans: ['Poppins', 'system-ui', 'sans-serif'],
       mono: ['"Fira Code"', 'mono'],
+    },
+    screens: {
+      'max-sm': { max: '1024px' },
+      ...defaultTheme.screens,
     },
     extend: {
       backgroundImage: {

@@ -24,7 +24,7 @@ const socials: { icon: string; alt: string }[] = [
 
 const Socials = () => {
   return (
-    <div className="flex space-x-2">
+    <div className="flex space-x-6 lg:space-x-2">
       {socials.map(({ alt, icon }) => (
         <img
           key={alt}
