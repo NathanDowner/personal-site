@@ -19,7 +19,7 @@ module.exports = {
       mono: ['"Fira Code"', 'mono'],
     },
     screens: {
-      'max-sm': { max: '1024px' },
+      'max-sm': { max: '1023px' },
       ...defaultTheme.screens,
     },
     extend: {

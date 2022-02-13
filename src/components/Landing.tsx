@@ -4,10 +4,10 @@ const Landing = () => {
   return (
     // Will generate a background-position utility
     <section className="relative -mt-20 h-screen overflow-hidden px-8">
-      <div className="absolute right-0 -mr-5 h-2/3 w-full bg-landing-img bg-cover bg-[position:70%_50%] bg-no-repeat max-sm:left-0  md:bg-center lg:h-full lg:w-2/3 lg:[clip-path:polygon(38%_0,100%_0,100%_100%,0_100%)]" />
+      <div className="absolute right-0 -mr-5 h-2/3 w-full bg-landing-img bg-cover bg-[position:70%_50%] bg-no-repeat after:absolute after:inset-0 max-sm:left-0 after:max-sm:bg-gradient-to-t after:max-sm:from-bg-blue md:bg-center  lg:h-full lg:w-2/3 lg:[clip-path:polygon(38%_0,100%_0,100%_100%,0_100%)] lg:after:hidden" />
 
       <div className="max-w-screen-2x relative mx-auto h-full text-center lg:text-left">
-        <div className="absolute bottom-0 flex h-[60%] w-full flex-col items-center justify-between border-2 border-light pb-6 lg:static lg:h-full lg:items-start lg:justify-center">
+        <div className="absolute bottom-0 flex h-[60%] w-full flex-col items-center justify-between pb-6 lg:static lg:h-full lg:items-start lg:justify-center">
           {/* Text */}
           <div>
             <h3 className="small-tags font-mono text-base lg:text-xl">
