@@ -1,19 +1,23 @@
-import logo from '../assets/Logo.svg';
+import logo from '../../assets/Logo.svg';
+import MenuButton from './MenuButton';
 
 const navLinks: string[] = ['Home', 'About', 'Work', 'Projects', 'Contact'];
 
-const Header = () => {
+type HeaderProps = {
+  onToggleMenu: () => void;
+};
+const Header = ({ onToggleMenu }: HeaderProps) => {
   return (
-    <header className="sticky top-0 z-50 bg-bg-blue bg-opacity-70 py-5 px-8 shadow-xl backdrop-blur-md">
+    <header className="sticky top-0 z-[60] bg-bg-blue bg-opacity-70 py-5 px-8 shadow-xl backdrop-blur-md">
       <div className="mx-auto flex max-w-screen-2xl items-center justify-between">
         <img src={logo} className="h-8" alt="Logo" />
-        <nav>
+        <nav className="hidden xl:block">
           <ul className="flex items-center space-x-8">
             {navLinks.map((link) => (
               <li key={link}>
                 <a
                   className="nav-link transition-all ease-in hover:text-red"
-                  href={'/' + link.toLowerCase()}
+                  href={'#' + link.toLowerCase()}
                 >
                   {link}
                 </a>
@@ -27,6 +31,8 @@ const Header = () => {
             </li>
           </ul>
         </nav>
+
+        <MenuButton onClick={onToggleMenu} />
       </div>
     </header>
   );
