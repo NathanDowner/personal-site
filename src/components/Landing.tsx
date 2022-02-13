@@ -2,7 +2,7 @@ import Socials from './Socials';
 
 const Landing = () => {
   return (
-    <section className="relative -mt-20 h-screen px-8">
+    <section className="relative -mt-20 h-screen overflow-hidden px-8">
       <div className="background-clip absolute right-0 -mr-5 h-full w-2/3 bg-landing-img bg-cover bg-right bg-no-repeat" />
 
       <div className="mx-auto max-w-screen-2xl">
@@ -22,7 +22,7 @@ const Landing = () => {
               Contact Me
             </a>
             <a
-              className="before:hover: relative overflow-hidden rounded-lg border-2 border-light px-3 py-2 transition-colors ease-in-out before:absolute before:inset-0 before:z-[-1] before:origin-left before:bg-light before:transition-all before:duration-500 before:ease-in-out before:[clip-path:circle(0%_at_0%_50%)] hover:text-red before:hover:[clip-path:circle(200%)]"
+              className="relative overflow-hidden rounded-lg border-2 border-light px-3 py-2 transition-colors ease-in-out before:absolute before:inset-0 before:z-[-1] before:origin-left before:bg-light before:transition-all before:duration-500 before:ease-in-out before:[clip-path:circle(0%_at_0%_50%)] hover:text-red before:hover:[clip-path:circle(200%)]"
               href="/"
             >
               View Projects
