@@ -4,7 +4,7 @@ import ProjectCarousel from './ProjectCarousel';
 
 const ProjectsSection = () => {
   return (
-    <FullPageSection watermarkText="Projects">
+    <FullPageSection id="projects" watermarkText="Projects">
       <SectionTitle title="Things I've Built" />
       <ProjectCarousel />
     </FullPageSection>

@@ -1,10 +1,15 @@
 type Props = {
   watermarkText: string;
+  id?: string;
 };
 
-const FullPageSection: React.FC<Props> = ({ watermarkText, children }) => {
+const FullPageSection: React.FC<Props> = ({
+  watermarkText,
+  id = '',
+  children,
+}) => {
   return (
-    <section className="relative overflow-hidden py-20 px-8">
+    <section id={id} className="relative overflow-hidden py-20 px-8">
       <span className="absolute -left-12 z-0 select-none text-7xl font-extrabold leading-tight text-overlay opacity-20 md:text-[100px] lg:text-[180px]">
         {watermarkText}
       </span>
