@@ -39,10 +39,20 @@ module.exports = {
           '0%': { transform: 'translateX(0)' },
           '100%': { transform: 'translateX(calc(calc(100%)*-1))' },
         },
+        'ticker-sm': {
+          '0%': { transform: 'translateX(32px)' },
+          '100%': { transform: 'translateX(calc(calc(100%)*-1))' },
+        },
+        'ticker2-sm': {
+          '0%': { transform: 'translateX(0)' },
+          '100%': { transform: 'translateX(calc(calc(100%)*-1))' },
+        },
       },
       animation: {
         ticker: 'ticker 30s linear infinite',
         ticker2: 'ticker 30s linear infinite',
+        'ticker-sm': 'ticker 30s linear infinite',
+        'ticker2-sm': 'ticker 30s linear infinite',
       },
     },
   },

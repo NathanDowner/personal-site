@@ -51,16 +51,16 @@ const tools: { name: string; icon: string }[] = [
 
 const FrameworksSection = () => {
   return (
-    <div className=" overflow-hidden bg-container-bg py-10">
+    <div className="overflow-hidden bg-container-bg py-10">
       <SectionTitle title="What I Use" />
 
-      <div className="flex space-x-24">
-        <div className="flex shrink-0 animate-ticker space-x-24">
+      <div className="flex space-x-8 md:space-x-24">
+        <div className=" flex shrink-0 animate-ticker space-x-8 md:animate-ticker md:space-x-24">
           {tools.map((tool) => (
             <FrameworkCard {...tool} key={tool.name} />
           ))}
         </div>
-        <div className="flex shrink-0 animate-ticker2 space-x-24">
+        <div className="flex shrink-0 animate-ticker2-sm space-x-8 md:animate-ticker2 md:space-x-24">
           {tools.map((tool) => (
             <FrameworkCard {...tool} key={tool.name} />
           ))}
