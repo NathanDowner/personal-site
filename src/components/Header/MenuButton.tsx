@@ -6,7 +6,7 @@ type MenuButtonProps = {
 const MenuButton = ({ onClick }: MenuButtonProps) => {
   return (
     <div
-      className="group flex cursor-pointer flex-col space-y-1 xl:hidden"
+      className="group ml-auto flex cursor-pointer flex-col space-y-1 md:hidden"
       onClick={onClick}
     >
       <span className="relative h-[3px] w-4 self-end bg-light before:absolute before:inset-0 before:origin-right before:scale-x-0 before:bg-red before:transition-transform before:ease-in-out group-hover:before:scale-x-100"></span>
