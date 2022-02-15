@@ -88,3 +88,7 @@
   height: 400px;
   /* width: 100%; */
 }
+
+.swiper {
+  margin: 0 !important;
+}
