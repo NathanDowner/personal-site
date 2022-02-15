@@ -58,7 +58,7 @@
   @apply text-red;
 }
 
-@variants even, odd {
+@layer utilities {
   .reversed {
     direction: rtl;
   }
