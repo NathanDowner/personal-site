@@ -12,6 +12,7 @@ module.exports = {
       'card-bg': '#111A32',
       'container-bg': '#1D222F',
       overlay: '#2A4078',
+      'billboard-bg': '#30384E',
       'project-link-bg': '#22325C',
     },
     fontFamily: {
