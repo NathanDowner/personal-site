@@ -45,6 +45,7 @@ const sampleProject: Project = {
 };
 
 const ProjectCard = ({ isSelected = false, isPrev, isNext }: Props) => {
+  //  use swiper-slide-active class to change the broder to red
   return (
     <div
       className={`${isPrev ? '' : isNext ? 'border-2 border-light' : ''} ${

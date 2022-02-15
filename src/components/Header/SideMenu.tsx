@@ -19,7 +19,7 @@ const SideMenu = ({ onClose, isOpen }: SideMenuProps) => {
       >
         <div
           onClick={onClose}
-          className={` absolute top-0 left-0 z-40 h-full w-full backdrop-blur-sm transition-transform duration-300 ease-in-out`}
+          className={`fixed top-0 left-0 z-40 h-full w-full backdrop-blur-sm transition-transform duration-300 ease-in-out`}
         />
       </Transition.Child>
       <Transition.Child
@@ -31,7 +31,7 @@ const SideMenu = ({ onClose, isOpen }: SideMenuProps) => {
         leaveTo="translate-x-full"
       >
         <aside
-          className={` fixed right-0 top-0 bottom-0 z-50 grid w-[min(75vw,400px)] place-items-center  bg-card-bg transition-transform duration-300 ease-in-out`}
+          className={`fixed right-0 top-0 bottom-0 z-50 grid w-[min(75vw,400px)] place-items-center  bg-card-bg transition-transform duration-300 ease-in-out`}
         >
           <nav className="text-center text-lg">
             <ul className=" mb-12 space-y-4">
