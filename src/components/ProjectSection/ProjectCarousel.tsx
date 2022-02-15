@@ -2,9 +2,8 @@ import ProjectCard from './ProjectCard';
 import { Swiper, SwiperSlide } from 'swiper/react';
 import 'swiper/css';
 import 'swiper/css/effect-coverflow';
-import 'swiper/css/pagination';
 
-import { EffectCoverflow, Pagination } from 'swiper';
+import { EffectCoverflow } from 'swiper';
 import CarouselControls from './CarouselControls';
 
 const ProjectCarousel = () => {
@@ -24,10 +23,9 @@ const ProjectCarousel = () => {
           modifier: 20,
           slideShadows: false, // 80,20
         }}
-        pagination={true}
         onSlideChange={() => console.log('slide change')}
         onSwiper={(swiper) => console.log('slide change')}
-        modules={[EffectCoverflow, Pagination]}
+        modules={[EffectCoverflow]}
       >
         <div
           slot="container-start"
