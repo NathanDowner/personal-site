@@ -41,7 +41,11 @@
 }
 
 .footer-heading {
-  @apply font-bold;
+  @apply text-xl  font-bold;
+}
+
+.footer-link {
+  @apply transition-colors ease-in hover:text-red;
 }
 
 .section-header::before {
