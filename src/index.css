@@ -91,4 +91,5 @@
 
 .swiper {
   margin: 0 !important;
+  display: flex !important;
 }

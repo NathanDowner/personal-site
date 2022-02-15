@@ -1,25 +1,15 @@
 import ProjectCard from './ProjectCard';
-import { Swiper, SwiperSlide, useSwiper } from 'swiper/react';
-import prevBtn from '../../assets/icons/prev-arrow.svg';
-import nextBtn from '../../assets/icons/next-arrow.svg';
+import { Swiper, SwiperSlide } from 'swiper/react';
 import 'swiper/css';
 import 'swiper/css/effect-coverflow';
+import 'swiper/css/pagination';
 
 import { EffectCoverflow, Pagination } from 'swiper';
-import CarouselButton from './CarouselButton';
+import CarouselControls from './CarouselControls';
 
 const ProjectCarousel = () => {
-  const swiper = useSwiper();
-
-  const nextSlide = () => swiper.slideNext();
-  const prevSlide = () => swiper.slidePrev();
-
   return (
-    <div className="flex">
-      <div className="mr-8 flex flex-col justify-evenly">
-        <CarouselButton icon={prevBtn} label="Prev" onClick={prevSlide} />
-        <CarouselButton icon={nextBtn} label="Next" onClick={nextSlide} />
-      </div>
+    <div className="">
       <Swiper
         effect="coverflow"
         grabCursor={true}
@@ -39,6 +29,12 @@ const ProjectCarousel = () => {
         onSwiper={(swiper) => console.log('slide change')}
         modules={[EffectCoverflow, Pagination]}
       >
+        <div
+          slot="container-start"
+          className="mr-8 flex flex-col justify-evenly"
+        >
+          <CarouselControls />
+        </div>
         {[1, 2, 3].map((count, index) => (
           <SwiperSlide key={count} style={{ width: 'auto', height: 'auto' }}>
             {({ isActive, isNext, isPrev }) => (
