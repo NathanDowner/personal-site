@@ -1,5 +1,6 @@
 import githubIcon from '../../assets/logos/github-proj-icon.svg';
 import externalIcon from '../../assets/icons/external-link-icon.svg';
+import { Project } from '../../models/project.model';
 
 type Props = {
   isSelected: boolean;
@@ -10,26 +11,6 @@ type Props = {
 const icons: { [externalSite: string]: string } = {
   github: githubIcon,
   website: externalIcon,
-};
-
-type Link = {
-  url: string;
-  name: 'github' | 'website' | 'playstore' | 'appstore';
-};
-
-type Media = {
-  name: string;
-  src: string;
-};
-
-type Tool = string;
-
-type Project = {
-  title: string;
-  description: string;
-  links: Link[];
-  media: Media[];
-  tools: Tool[];
 };
 
 const sampleProject: Project = {
