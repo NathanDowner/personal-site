@@ -1,6 +1,5 @@
 import logo from '../assets/Logo.svg';
 import mail from '../assets/icons/email.svg';
-import phone from '../assets/icons/phone.svg';
 import jaFlag from '../assets/icons/jamaica-flag.svg';
 import Socials from './Socials';
 const Footer = () => {
@@ -23,10 +22,6 @@ const Footer = () => {
               Contact Info
             </h2>
             <ul className="mt-2 space-y-1">
-              <li className="flex items-center space-x-2">
-                <img src={phone} className="h-4" alt="Phone icon" />
-                <span>+1 (876) 770-5067</span>
-              </li>
               <li>
                 <a
                   href="mailto:nathandowner123@gmail.com"
