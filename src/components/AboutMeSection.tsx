@@ -14,7 +14,7 @@ const AboutMeSection = () => {
             alt="portrait of Nathan Downer"
           />
         </div>
-        <div className="max-w-prose space-y-3 lg:text-lg">
+        <div className="max-w-prose space-y-3 text-lg">
           <p className="indent-8">
             I'm Nathan, and I take pleasure in building things that both solve
             problems and that people want to use. I developed a knack for
