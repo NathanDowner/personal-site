@@ -1,3 +1,4 @@
+import { useEffect, useState } from 'react';
 import logo from '../../assets/Logo.svg';
 import MenuButton from './MenuButton';
 
@@ -7,8 +8,31 @@ type HeaderProps = {
   onToggleMenu: () => void;
 };
 const Header = ({ onToggleMenu }: HeaderProps) => {
+  const [isScrollingDown, setIsScrollingDown] = useState(false);
+  useEffect(() => {
+    var prevScrollpos = window.pageYOffset;
+    const handleScroll = () => {
+      const currentScrollPos = window.pageYOffset;
+      if (prevScrollpos > currentScrollPos) {
+        setIsScrollingDown(false);
+      } else {
+        setIsScrollingDown(true);
+      }
+      prevScrollpos = currentScrollPos;
+    };
+    window.addEventListener('scroll', handleScroll);
+
+    return () => {
+      window.removeEventListener('scroll', handleScroll);
+    };
+  }, []);
+
   return (
-    <header className="sticky top-0 z-[60] bg-bg-blue bg-opacity-70 py-5 px-8 shadow-xl backdrop-blur-md">
+    <header
+      className={`sticky top-0 ${
+        isScrollingDown && '-translate-y-full'
+      } z-[60] bg-bg-blue bg-opacity-70 py-5 px-8 shadow-xl backdrop-blur-md transition-transform duration-300`}
+    >
       <div className="mx-auto flex max-w-screen-2xl items-center">
         <img src={logo} className="h-8" alt="Logo" />
         <nav className="hidden grow md:flex">
