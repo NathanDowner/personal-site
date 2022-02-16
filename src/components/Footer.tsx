@@ -11,14 +11,17 @@ const Footer = () => {
           <div>
             <img src={logo} className="mb-2 h-8" alt="Logo" />
             <p className="mb-2 text-sm lg:text-base">
-              Lorem ipsum dolor sit amet, consectetur adipiscing elit. Amet
-              morbi elit enim nulla. Amet morbi elit enim nulla.
+              Have software you need built or have a role you think I'd be
+              interested in? I'd love to connect with you! Just send me an email
+              or connect with me on my socials!
             </p>
             <Socials />
           </div>
 
           <section>
-            <h2 className="footer-heading">Contact Info</h2>
+            <h2 className="footer-heading" id="contact">
+              Contact Info
+            </h2>
             <ul className="mt-2 space-y-1">
               <li className="flex items-center space-x-2">
                 <img src={phone} className="h-4" alt="Phone icon" />
