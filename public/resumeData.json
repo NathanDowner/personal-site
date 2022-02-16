@@ -1,0 +1,45 @@
+{
+  "jobs": [
+    {
+      "title": "Software Engineer",
+      "company": "Speur Professional Services LLC",
+      "tenure": "Sep 2020 - May 2021",
+      "notes": [
+        "Consulted with clients to ascertain needs and helped author proposals ",
+        "Authored, issued and marked front and back-end technical assessments as part of the hiring process",
+        "Guided interns while overseeing a portion of the internship program",
+        "Implemented new features in e-commerce mobile applications and created additional api endpoints",
+        "Conducted code reviews for Junior developers"
+      ]
+    },
+    {
+      "title": "Engineering Summer Analyst (Remote Internship)",
+      "company": "Goldman Sachs",
+      "tenure": "Jul - Aug 2020",
+      "notes": [
+        "Collaborated to build a regression testing tool for deterministic nodes in the Atlas Trading Platform"
+      ]
+    },
+    {
+      "title": "Junior Developer",
+      "company": "Speur Professional Services LLC",
+      "tenure": "Jun 2019 - Sep 2020",
+      "notes": [
+        "Collaborated with other interns and stakeholders to design and architect 3 components of an e-commerce platform as well as another internal project",
+        "Collaborated to build out database and api for e-commerce platform",
+        "Created cross-platform mobile applications for e-commmerce platform "
+      ]
+    },
+    {
+      "title": "UX & UI Design Intern",
+      "company": "Mona Information Technology Services",
+      "tenure": "Feb - Apr 2019",
+      "notes": [
+        "Designed websites for departments on Campus (UWI Mona)",
+        "Redsigned websites to improve usability and visual appeal",
+        "Built out the components of a newly created design system"
+      ]
+    }
+  ],
+  "projects": []
+}
