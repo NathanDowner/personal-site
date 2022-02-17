@@ -28,9 +28,7 @@ const Footer = () => {
                   className="inline-flex items-center space-x-2"
                 >
                   <img src={mail} className="h-4" alt="Email icon" />
-                  <span className="footer-link underline underline-offset-2">
-                    nathandowner123@gmail.com
-                  </span>
+                  <span className="footer-link">nathandowner123@gmail.com</span>
                 </a>
               </li>
               <li className="flex items-center space-x-2">
