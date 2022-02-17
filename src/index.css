@@ -45,7 +45,7 @@
 }
 
 .footer-link {
-  @apply transition-colors ease-in hover:text-red;
+  @apply transition-colors ease-in hover:text-red hover:underline hover:underline-offset-2;
 }
 
 .section-header::before {
