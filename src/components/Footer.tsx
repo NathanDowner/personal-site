@@ -40,7 +40,7 @@ const Footer = () => {
 
           <section>
             <h2 className="footer-heading">Links</h2>
-            <ul className="mt-2 space-y-1 underline underline-offset-2">
+            <ul className="mt-2 space-y-1">
               <li className="footer-link">
                 <a href="#about">About</a>
               </li>
