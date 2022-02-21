@@ -63,8 +63,8 @@ const Header = ({ onToggleMenu }: HeaderProps) => {
   return (
     <header
       className={`sticky top-0 ${
-        isScrollingDown && '-translate-y-full'
-      } z-[60] bg-bg-blue bg-opacity-70 py-5 px-8 shadow-xl backdrop-blur-md transition-transform duration-300`}
+        isScrollingDown && '-top-[100%]'
+      } z-[60] bg-bg-blue bg-opacity-70 py-5 px-8 shadow-xl backdrop-blur-md transition-all duration-500`}
     >
       <div className="mx-auto flex max-w-screen-2xl items-center">
         <img src={logo} className="h-8" alt="Logo" />
