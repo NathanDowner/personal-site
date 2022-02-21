@@ -45,6 +45,7 @@ const Header = ({ onToggleMenu }: HeaderProps) => {
     var prevScrollpos = window.pageYOffset;
     const handleScroll = () => {
       const currentScrollPos = window.pageYOffset;
+
       if (prevScrollpos > currentScrollPos) {
         setIsScrollingDown(false);
       } else {
@@ -60,8 +61,7 @@ const Header = ({ onToggleMenu }: HeaderProps) => {
   }, []);
 
   return (
-    <motion.header
-      {...motionAnim.nav}
+    <header
       className={`sticky top-0 ${
         isScrollingDown && '-translate-y-full'
       } z-[60] bg-bg-blue bg-opacity-70 py-5 px-8 shadow-xl backdrop-blur-md transition-transform duration-300`}
@@ -69,7 +69,10 @@ const Header = ({ onToggleMenu }: HeaderProps) => {
       <div className="mx-auto flex max-w-screen-2xl items-center">
         <img src={logo} className="h-8" alt="Logo" />
         <nav className="hidden grow md:flex">
-          <ul className="ml-auto mr-auto flex items-center space-x-8  lg:mr-8">
+          <motion.ul
+            {...motionAnim.nav}
+            className="ml-auto mr-auto flex items-center space-x-8  lg:mr-8"
+          >
             {navLinks.map((link) => (
               <motion.li {...motionAnim.link} key={link}>
                 <a
@@ -80,7 +83,7 @@ const Header = ({ onToggleMenu }: HeaderProps) => {
                 </a>
               </motion.li>
             ))}
-          </ul>
+          </motion.ul>
           <a
             href=" https://drive.google.com/drive/folders/1x4FdgIpcFmgmSKtRP9FndU1bokR3XZ2y?usp=sharing"
             target="_blank"
@@ -91,7 +94,7 @@ const Header = ({ onToggleMenu }: HeaderProps) => {
         </nav>
         <MenuButton onClick={onToggleMenu} />
       </div>
-    </motion.header>
+    </header>
   );
 };
 
