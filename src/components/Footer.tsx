@@ -3,6 +3,8 @@ import mail from '../assets/icons/email.svg';
 import jaFlag from '../assets/icons/jamaica-flag.svg';
 import Socials from './Socials';
 const Footer = () => {
+  const currentYear = new Date().getFullYear();
+
   return (
     <div className="bg-container-bg px-5 py-10">
       <div className="mx-auto max-w-screen-2xl">
@@ -58,7 +60,7 @@ const Footer = () => {
         </div>
 
         <hr className="my-4" />
-        <p className="">&copy; 2021 Nathan Downer</p>
+        <p>&copy; {currentYear} Nathan Downer</p>
       </div>
     </div>
   );
