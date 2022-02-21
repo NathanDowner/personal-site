@@ -1,5 +1,7 @@
+import { motion } from 'framer-motion';
 import { useEffect, useState } from 'react';
 import logo from '../../assets/Logo.svg';
+import { AnimationObject, AnimationProps } from '../../models/motion.model';
 import MenuButton from './MenuButton';
 
 const navLinks: string[] = ['Home', 'About', 'Work', 'Projects', 'Contact'];
@@ -7,6 +9,36 @@ const navLinks: string[] = ['Home', 'About', 'Work', 'Projects', 'Contact'];
 type HeaderProps = {
   onToggleMenu: () => void;
 };
+
+const variants: AnimationProps['variants'] = {
+  hidden: { translateY: '-100%' },
+  visible: {
+    translateY: 0,
+    transition: {
+      delay: 0.5,
+      ease: 'easeOut',
+      delayChildren: 1.5,
+      staggerChildren: 0.2,
+    },
+  },
+};
+
+const links: AnimationProps['variants'] = {
+  hidden: { opacity: 0 },
+  visible: { opacity: 1 },
+};
+
+const motionAnim: AnimationObject = {
+  nav: {
+    initial: 'hidden',
+    animate: 'visible',
+    variants,
+  },
+  link: {
+    variants: links,
+  },
+};
+
 const Header = ({ onToggleMenu }: HeaderProps) => {
   const [isScrollingDown, setIsScrollingDown] = useState(false);
   useEffect(() => {
@@ -28,7 +60,8 @@ const Header = ({ onToggleMenu }: HeaderProps) => {
   }, []);
 
   return (
-    <header
+    <motion.header
+      {...motionAnim.nav}
       className={`sticky top-0 ${
         isScrollingDown && '-translate-y-full'
       } z-[60] bg-bg-blue bg-opacity-70 py-5 px-8 shadow-xl backdrop-blur-md transition-transform duration-300`}
@@ -37,46 +70,16 @@ const Header = ({ onToggleMenu }: HeaderProps) => {
         <img src={logo} className="h-8" alt="Logo" />
         <nav className="hidden grow md:flex">
           <ul className="ml-auto mr-auto flex items-center space-x-8  lg:mr-8">
-            <li>
-              <a
-                className="nav-link transition-all ease-in hover:text-red"
-                href="#home"
-              >
-                Home
-              </a>
-            </li>
-            <li>
-              <a
-                className="nav-link transition-all ease-in hover:text-red"
-                href="#about"
-              >
-                About
-              </a>
-            </li>
-            <li>
-              <a
-                className="nav-link transition-all ease-in hover:text-red"
-                href="#work"
-              >
-                Work
-              </a>
-            </li>
-            <li>
-              <a
-                className="nav-link transition-all ease-in hover:text-red"
-                href="#projects"
-              >
-                Projects
-              </a>
-            </li>
-            <li>
-              <a
-                className="nav-link transition-all ease-in hover:text-red"
-                href="#contact"
-              >
-                Contact
-              </a>
-            </li>
+            {navLinks.map((link) => (
+              <motion.li {...motionAnim.link} key={link}>
+                <a
+                  className="nav-link transition-all ease-in hover:text-red"
+                  href={'#' + link.toLocaleLowerCase()}
+                >
+                  {link}
+                </a>
+              </motion.li>
+            ))}
           </ul>
           <a
             href=" https://drive.google.com/drive/folders/1x4FdgIpcFmgmSKtRP9FndU1bokR3XZ2y?usp=sharing"
@@ -88,7 +91,7 @@ const Header = ({ onToggleMenu }: HeaderProps) => {
         </nav>
         <MenuButton onClick={onToggleMenu} />
       </div>
-    </header>
+    </motion.header>
   );
 };
 
