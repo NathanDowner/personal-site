@@ -2,34 +2,21 @@ import Socials from './Socials';
 import { motion } from 'framer-motion';
 import { AnimationObject, AnimationProps } from '../models/motion.model';
 
-const variants: AnimationProps['variants'] = {
-  hidden: {
-    opacity: 0,
-  },
-  visible: {
-    opacity: 1,
-
-    transition: {
-      delay: 0.5,
-      ease: 'easeOut',
-      staggerChildren: 0.5,
-    },
-  },
-};
-
-const textVariants: AnimationProps['variants'] = {
-  hidden: { ...variants.hidden },
-  visible: { ...variants.visible, transition: {} },
-};
-
 const motionAnim: AnimationObject = {
   image: {
     animate: { translateX: 0, opacity: 1 },
     initial: { translateX: '10%', opacity: 0 },
     transition: { delay: 0.5, duration: 1, ease: 'easeOut' },
   },
-  cta: { variants, initial: 'hidden', animate: 'visible' },
-  ctaText: { variants: textVariants },
+  cta: {
+    initial: { opacity: 0, x: '-10%' },
+    animate: { opacity: 1, x: 0 },
+    transition: {
+      ease: 'easeOut',
+      delay: 0.5,
+      duration: 1,
+    },
+  },
 };
 
 const Landing = () => {
@@ -50,34 +37,22 @@ const Landing = () => {
         >
           {/* Text */}
           <div>
-            <motion.h3
-              {...motionAnim.ctaText}
-              className="small-tags font-mono text-base lg:text-xl"
-            >
+            <h3 className="small-tags font-mono text-base lg:text-xl">
               Hi there
-            </motion.h3>
-            <motion.h1
-              {...motionAnim.ctaText}
-              className="my-2 text-4xl font-bold lg:text-6xl"
-            >
+            </h3>
+            <h1 className="my-2 text-4xl font-bold lg:text-6xl">
               I'm Nathan Downer
-            </motion.h1>
-            <motion.h2
-              {...motionAnim.ctaText}
-              className="text-lg font-thin lg:text-2xl"
-            >
+            </h1>
+            <h2 className="text-lg font-thin lg:text-2xl">
               A Software Engineer who loves{' '}
               <span className="font-bold">
                 Frontend <br className="hidden lg:block" /> Development
               </span>
-            </motion.h2>
+            </h2>
           </div>
 
           {/* Buttons */}
-          <motion.div
-            {...motionAnim.ctaText}
-            className="my-6 flex flex-col items-center space-y-6 text-lg lg:flex-row lg:space-y-0 lg:space-x-4"
-          >
+          <div className="my-6 flex flex-col items-center space-y-6 text-lg lg:flex-row lg:space-y-0 lg:space-x-4">
             <a
               className="red-btn-glow w-[min(300px,80vw)] rounded-lg bg-red px-3 py-2 lg:w-auto"
               href="#contact"
@@ -90,7 +65,7 @@ const Landing = () => {
             >
               View Projects
             </a>
-          </motion.div>
+          </div>
 
           <Socials />
         </motion.div>
