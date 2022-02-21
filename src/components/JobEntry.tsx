@@ -1,4 +1,21 @@
+import { motion } from 'framer-motion';
 import { Job } from '../models/job.model';
+import { AnimationObject } from '../models/motion.model';
+
+const animations: AnimationObject = {
+  content: {
+    initial: { opacity: 0, y: 50 },
+    whileInView: {
+      opacity: 1,
+      y: 0,
+      transition: {
+        ease: 'easeOut',
+        duration: 0.5,
+      },
+    },
+    viewport: { once: true, amount: 0.8 },
+  },
+};
 
 type JobEntryProps = {
   job: Job;
@@ -6,7 +23,10 @@ type JobEntryProps = {
 
 const JobEntry = ({ job }: JobEntryProps) => {
   return (
-    <li className="md:odd:reversed grid grid-cols-[auto_1fr] items-center gap-6 md:grid-cols-[1fr_auto_1fr]">
+    <motion.li
+      {...animations.content}
+      className="md:odd:reversed grid grid-cols-[auto_1fr] items-center gap-6 md:grid-cols-[1fr_auto_1fr]"
+    >
       {/* Date */}
       <p className="hidden justify-self-end md:inline-block">{job.tenure}</p>
 
@@ -30,7 +50,7 @@ const JobEntry = ({ job }: JobEntryProps) => {
           </ul>
         </div>
       </div>
-    </li>
+    </motion.li>
   );
 };
 
