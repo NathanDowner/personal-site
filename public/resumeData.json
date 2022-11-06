@@ -1,6 +1,35 @@
 {
   "jobs": [
     {
+      "title": "Associate Software Engineer",
+      "company": "Real Decoy Global Services",
+      "tenure": "Apr 2022 - Present",
+      "notes": [
+        "Built out frontend web applications in the financal services sector",
+        "Provided full-stack support for maintenance and feature additions on existing client projects",
+        "Assisted in the hiring process by conducting screen calls with candidates",
+        "Contributed to company open-source projects and their software engineering practice area",
+        "Provided technical support to junior and mid-level engineers"
+      ]
+    },
+    {
+      "title": "React Developer",
+      "company": "Unbank",
+      "tenure": "Feb 2022 - Oct 2022",
+      "notes": [
+        "Created a web portal where new and existing clients can buy and sell crypto (Bitcoin, Litecoin, Dogecoin)"
+      ]
+    },
+    {
+      "title": "Software Engineering Consultant",
+      "company": "Speur Professional Services LLC",
+      "tenure": "Aug 2021 - Jan 2022",
+      "notes": [
+        "Lead development effort on a mobile application",
+        "Maintained and upgraded applications"
+      ]
+    },
+    {
       "title": "Software Engineer",
       "company": "Speur Professional Services LLC",
       "tenure": "Sep 2020 - May 2021",
