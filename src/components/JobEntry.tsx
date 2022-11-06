@@ -13,7 +13,7 @@ const animations: AnimationObject = {
         duration: 0.5,
       },
     },
-    viewport: { once: true, amount: 0.5 },
+    viewport: { once: false, amount: 0.5 },
   },
 };
 
