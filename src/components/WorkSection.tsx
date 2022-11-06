@@ -13,7 +13,7 @@ const WorkSection = ({ jobs = [] }: WorkSectionProps) => {
       <SectionTitle title="Where I've Worked" />
       <div className="flex items-center justify-center ">
         <ul className="relative mt-10 space-y-4">
-          <div className="absolute left-2 h-full -translate-x-1/2 transform border-l-4 border-red md:left-1/2" />
+          <li className="absolute left-2 h-full -translate-x-1/2 transform border-l-4 border-red md:left-1/2" />
           {jobs.map((job, idx) => (
             <JobEntry key={idx} job={job} />
           ))}
