@@ -1,9 +1,15 @@
 {
   "jobs": [
     {
+      "title:": "Frontend Developer",
+      "company": "Lynk (TFOB 2021 Ltd.)",
+      "tenure": "Jul 2023 - Present",
+      "notes": []
+    },
+    {
       "title": "Associate Software Engineer",
       "company": "Real Decoy Global Services",
-      "tenure": "Apr 2022 - Present",
+      "tenure": "Apr 2022 - Jul 2023",
       "notes": [
         "Built out frontend web applications in the financal services sector",
         "Provided full-stack support for maintenance and feature additions on existing client projects",
@@ -70,5 +76,38 @@
       ]
     }
   ],
-  "projects": []
+  "projects": [
+    {
+      "title": "Aggregator",
+      "description": "An RSS feed aggregator to help you keep up with your favorite blogs and news sites!",
+      "tools": [
+        "Next.js",
+        "Tailwindcss",
+        "Firebase"
+      ],
+      "links": {
+        "github": "https://github.com/NathanDowner/aggregator",
+        "demo": "https://aggregator-one.vercel.app/"
+      },
+      "media": [
+        {
+          "name": "Screenshot",
+          "src": "./src/assets/project_media/aggregator_screenshot.png"
+        }
+      ]
+    },
+    {
+      "title": "Sample Projects",
+      "description": "Lorem, ipsum dolor sit amet consectetur adipisicing elit. Suscipit dolore nostrum esse obcaecati ipsam numquam iusto, laborum distinctio quaerat. Veniam.",
+      "tools": [
+        "Tool 1",
+        "Tool 2",
+        "Tool 3"
+      ],
+      "links": {
+        "github": null,
+        "demo": null
+      }
+    }
+  ]
 }
