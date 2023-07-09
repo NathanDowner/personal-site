@@ -45,9 +45,13 @@ const SideMenu = ({ onClose, isOpen }: SideMenuProps) => {
               </li>
             ))}
           </ul>
-          <button className="red-btn-glow rounded-md bg-red px-10 py-3">
+          <a
+            href=" https://drive.google.com/drive/folders/1x4FdgIpcFmgmSKtRP9FndU1bokR3XZ2y?usp=sharing"
+            target="_blank"
+            className="red-btn-glow rounded-md bg-red px-10 py-3"
+          >
             Resume
-          </button>
+          </a>
         </nav>
       </aside>
       {/* </Transition.Child> */}
